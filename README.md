@@ -1,6 +1,6 @@
 # Pester Linux Runner
 
-Provides an image to run [Pester](https://github.com/pester/Pester#pester) tests in a Linux container environment. 
+Provides an image to run [Pester](https://github.com/pester/Pester#pester) tests in a Linux container environment.
 
 Other utilities like [curl](https://curl.haxx.se/) and [Docker](https://www.docker.com/) are also bundled with this image.
 
@@ -22,6 +22,6 @@ Tests completed in 0ms
 Tests Passed: 0, Failed: 0, Skipped: 0, Pending: 0, Inconclusive: 0
 ```
 
-In the instance shown above no Pester tests were detected so no activities were actually tested. Add some tests to the current directory or point the `/test` volume mount at a location containing Pester tests and these will be run by the `pester-runner` coontainer.
+In the instance shown above no Pester tests were detected so no activities were actually tested. Add some tests to the current directory or point the `/test` volume mount at a location containing Pester tests and these will be run by the `pester-runner` container.
 
 `Docker` is also available, it can be used to mount a volume sharing the `/var/run/docker.sock` from the host, to execute docker commands.
