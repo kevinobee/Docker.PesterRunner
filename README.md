@@ -6,6 +6,14 @@ Other utilities like [curl](https://curl.haxx.se/) and [Docker](https://www.dock
 
 ## Usage
 
+The following command builds the `adminb/pester-runner` image from the [Dockerfile](Dockerfile).
+
+```PowerShell
+docker build -t admin/pester-runner .
+```
+
+To run the image use the command below:
+
 ```PowerShell
 docker run -v /var/run/docker.sock:/var/run/docker.sock -v ${pwd}:/test adminb/pester-runner
 ```
